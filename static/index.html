@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Pete's Demo Property Price Scraper</title>
+  <meta name="description" content="Pete's Demo Property Price Scraper">
+  <meta name="author" content="Peter Eldred">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Space+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="page-title">
+      <div class="img-wrapper"><img src="img/djp.png"></div>
+      <h1>Pete's Demo Property Price Scraper</h1>
+    </div>
+    <p>Wanna know the average price of every property listed in <strong>your</strong> suburb?</p>
+    <form>
+      <div class="form-group">
+        <input id="search" type="text" class="search" placeholder="Search by suburb or postcode">
+      </div>
+    </form>
+    <div class="quick-search">
+      <h2>Or quick search:</h2>
+      <div id="quickSearchSelections">
+        <a href="#" data-search-text="3106">3106</a>
+        <a href="#" data-search-text="Warrandyte">Warrandyte</a>
+        <a href="#" data-search-text="3124">3124</a>
+        <a href="#" data-search-text="Toorak">Toorak</a>
+        <a href="#" data-search-text="Brighton">Brighton</a>
+        <a href="#" data-search-text="Nunawading">Nunawading</a>
+        <a href="#" data-search-text="Erica">Erica</a>
+      </div>
+    </div>
+    <table id="searchHistory" class="search-history">
+      <thead>
+        <tr class="search-history-title">
+          <th class="search-item-text">Search Text</th>
+          <th class="search-item-site-count"># Sites</th>
+          <th class="search-item-page-count"># Pages</th>
+          <th class="search-item-price-count"># Prices</th>
+          <th class="search-item-price">Avg Price</th>
+        </tr>
+      </thead>
+      <tbody id="searchHistoryBody">
+
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

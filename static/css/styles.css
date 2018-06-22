@@ -1,0 +1,133 @@
+body {
+    background-color: #333738;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.page-title {
+    display: flex;
+    align-items: center;
+}
+
+.page-title img {
+    max-width: 96px;
+    margin-right: 15px;
+}
+
+h1 {
+    font-family: 'Space Mono', monospace;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    font-family: 'Space Mono', monospace;
+}
+
+form {
+    margin: 50px 0;
+}
+
+a {
+    color: white;
+}
+
+input[type="text"] {
+    display: block;
+    margin: 2px;
+    padding: 5px;
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus{
+    outline: none;
+}
+
+::-webkit-input-placeholder,
+:-moz-placeholder, 
+::-moz-placeholder,
+:-ms-input-placeholder {
+    color: #53727f;
+}
+
+.quick-search {
+    margin-bottom: 2em;
+}
+
+.search-history {
+    visibility: hidden;
+    opacity:0;
+    transition:visibility 0.3s linear,opacity 0.3s linear;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+}
+
+.search-history.visible {
+    visibility: visible;
+    opacity:1;
+}
+
+.search-item-text {
+    width: 50%;
+    text-align: left;
+}
+
+.search-item-site-count,
+.search-item-page-count,
+.search-item-price-count,
+.search-item-price {
+    text-align: right;
+    width: 12.5%;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 15px 30px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .page-title {
+        flex-direction: column;
+        text-align: center
+    }
+
+    .page-title img {
+        max-width: 25vw;
+        margin-right: 0;
+    }
+}
+
+.loader {
+    display: inline-block;
+    border: 3px solid #656868;
+    border-top: 3px solid #99cad6;
+    border-radius: 50%;
+    width: 0.75em;
+    height: 0.75em;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,28 @@
+{
+    "serverPort": 8000,
+    "postCodeFileName": "./assets/AU/AU.txt",
+
+    "scraperConfig": {
+        "maxPages": 30,  
+
+        "sites": [
+            {
+                "name": "Domain.com.au",
+                "enabled": true,
+                "searchUrl": "http://www.domain.com.au/sale/{{suburb}}-{{state}}-{{postCode}}/?excludeunderoffer=1&ssubs=1&sort=dateupdated-desc&page={{pageNo}}",
+                "pageLinkSelector": ".paginator__pages .paginator__page-button",
+                "listingSelector": ".search-results__listing",
+                "priceSelector": ".listing-result__price"
+            },
+
+            {
+                "name": "Realestate.com.au",
+                "enabled": true,
+                "searchUrl": "https://www.realestate.com.au/buy/in-{{suburb}},+{{state}}+{{postCode}}/list-{{pageNo}}",
+                "pageLinkSelector": ".resultCtrls .linkList li",
+                "listingSelector": "#searchResultsTbl article.resultBody",
+                "priceSelector": ".priceText"
+            }
+        ]
+    }
+}
