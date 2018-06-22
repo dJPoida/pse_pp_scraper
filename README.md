@@ -6,7 +6,7 @@ This project is a quick demo application pulled together to demo some of the Gol
 ![Screenshot](examples/screenshot_1.png)
 
 # What does it do?
-The application serves a single page on **localhost:8000**. The user is prompted to enter a search term of either a suburb or postcode. Upon submission of the search term, the application uses [Ferret](github.com/argusdusty/Ferret) to look up the most appropriate suburb, state and postcode match for the search criteria.
+The application serves a single page on **localhost:8000**. The user is prompted to enter a search term of either a suburb or postcode. Upon submission of the search term, the application uses [Ferret](https://github.com/argusdusty/Ferret) to look up the most appropriate suburb, state and postcode match for the search criteria.
 
 * The search is submitted to all of the real estate listing sites specified in the [config.json](config.json) file.
 * Goroutines are used to scrape each of the listing sites in the shortest possible time
