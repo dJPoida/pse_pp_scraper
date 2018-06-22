@@ -26,6 +26,7 @@ Be sure your go installation has these dependencies  before running:
 
 # Notes
 * Some suburbs and postcodes will not work properly as the lookup is quite basic at the moment (i.e. searching for "Burwood" will yield a lookup value of "Burwood, NSW 1805" which is not ideal!)
+* Only those prices that can be identified on the listing page and parsed into real numbers will be used in the average price calculation (i.e. listings that say "Contact Agent" are not included)
 
 # Credits
 * **Postcode Data** courtesy of [Geonames](http://www.geonames.org/)
