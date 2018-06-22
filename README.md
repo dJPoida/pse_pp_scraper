@@ -20,6 +20,12 @@ Be sure your go installation has these dependencies  before running:
 * github.com/argusdusty/Ferret
 
 # How to run
-* **Install:** `go get github.com/dJPoida/Demo-Golang-Property-Price-Scraper`
-* **Update:** `go get -u github.com/dJPoida/Demo-Golang-Property-Price-Scraper`
+* **Install:** `go get github.com/dJPoida/pse_pp_scraper`
+* **Update:** `go get -u github.com/dJPoida/pse_pp_scraper`
 * **Run:** `go run main.go` from within the project path
+
+# Notes
+* Some suburbs and postcodes will not work properly as the lookup is quite basic at the moment (i.e. searching for "Burwood" will yield a lookup value of "Burwood, NSW 1805" which is not ideal!)
+
+# Credits
+* **Postcode Data** courtesy of [Geonames](http://www.geonames.org/)
