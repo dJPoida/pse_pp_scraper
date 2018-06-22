@@ -1,7 +1,7 @@
 # Demo Golang Property Price Scraper
 **Author:** Peter Eldred, June 2018
 
-This project is a quick demo application pulled together by Peter Eldred 06-2018 which scrapes Australian real estate websites for average property prices.
+This project is a quick demo application pulled together to demo some of the Golang concurrency strengths by scraping Australian real estate websites for average suburb property prices.
 
 ![Screenshot](examples/screenshot_1.png)
 
