@@ -30,6 +30,7 @@ You can update the [config.json](config.json) file to change various application
 # Notes
 * Some suburbs and postcodes will not work properly as the lookup is quite basic at the moment (i.e. searching for "Burwood" will yield a lookup value of "Burwood, NSW 1805" which is not ideal!)
 * Only those prices that can be identified on the listing page and parsed into real numbers will be used in the average price calculation (i.e. listings that say "Contact Agent" are not included)
+* For now, the average price calculation is extremely basic in that it takes nothing about the category or size of the property into account, simply that it falls within the desired suburb. This means single bedroom apartments are averaged against 4 bedroom free standing homes.
 
 # Credits
 * **Postcode Data** courtesy of [Geonames](http://www.geonames.org/)
